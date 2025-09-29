@@ -1,0 +1,3 @@
+[submodule "firmware/coreboot"]
+	path = firmware/coreboot
+	url = https://github.com/ceres-c/coreboot.git
