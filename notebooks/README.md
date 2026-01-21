@@ -13,6 +13,10 @@ The data collector is a python script that can be run headlessly and store
 results in in a SQLite database. Run `data_collector.py --help` for more
 information.
 
+Note that you should match the target built into coreboot with
+the `--operation` argument (e.g. if coreboot is compiled with the `rdrand_add`
+option, run data_collector.py with `--operation rdrand-add`).
+
 ## Library files
 `glitch_utils.py` is the main file that handles the communication with the pi
 pico and the target, and wraps all the glitching logic.
